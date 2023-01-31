@@ -1,1 +1,3 @@
-# OMR_Net
+# OMRNet
+
+Neural Networks to classify answer boxes
