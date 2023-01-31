@@ -1,3 +1,3 @@
 # OMRNet
 
-OMRNet that classifies answer boxes into three class: Marked, empty and crossed-out
+OMRNet classifies answer boxes into three class: Marked, Empty and crossed-out
