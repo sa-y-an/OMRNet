@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4 mkw">MC Answer Box Classifier </h1>
+      <title>{% block title%} Home{% endblock %}</title>
+      <p class="lead"> Neural Networks to classify answer boxes </p>
+    </div>
+</div>
+
+<div class="container">
+    <p>
+        Unlike most of the existing techniques that rely on image processing algorithms
+        to recognize an extracted answer box, we have trained a deep neural network model to classify
+        the answer boxes among confirmed, crossed out, or empty boxes, thus providing room for crossing out a marked answer box,
+        and also removing the rigidness of template preparation for a MCQ test to some extent. <br>
+        We have also added the rest api for our service which can be found from the api option in the navbar.
+        <br> Click on the button below to know the class of an answer box.
+    </p>
+
+    <a href="{% url 'classifier:predict' %}">
+        <button type="button" class="btn btn-primary"> Classifier </button>
+    </a>
+
+</div>
+
+
+
+{% endblock %}

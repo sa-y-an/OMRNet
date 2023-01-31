@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} Classifier {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'classifier/home.css' %}">
+    <title>Answer Box Classifier </title>
+</head>
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 mkw">MC Answer Box Classifier </h1>
+          <p class="lead">Upload the answer box  </p>
+        </div>
+    </div>
+
+
+    <div class="container upload">
+        <form method="post" enctype="multipart/form-data" action="">
+                <div class="mb-3 form-group formcont">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+        
+        {% if img_obj %}
+            <p>Succesfully uploaded : {{img_obj.title}}</p>
+            <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">
+        {% endif %}
+    </div>
+
+    {% if img_obj.ans_class %}
+    <div class="container">
+        <p>
+            Our models predicts the image to be of <b>{{img_obj.ans_class}}</b> class with a confidence score of {{img_obj.score}}.
+        </p>
+    </div>
+    {% endif %}
+
+{% endblock %}

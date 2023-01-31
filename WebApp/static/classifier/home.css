@@ -1,0 +1,56 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #66737e;
+    border-radius: .3rem;
+  }
+
+.mkw{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.formcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(134, 182, 190, 0.5);
+  border-radius: 5px;
+}
+
+input {
+  background-color: rgb(240, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+#id_image {
+  /* background-color: rgba(101, 152, 228, 0.5); */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+}
+
+.lead{
+  color: aliceblue;
+}
