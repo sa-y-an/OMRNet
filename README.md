@@ -45,6 +45,19 @@ Since OMRNet will find its major applications in resource constraint regions we 
   </p>
 </div>
 
+### WebApp and REST API 
+
+We have a build a rest api to expose our model to a HTTP endpoint. We have also buld a website for demo. The code for the same can be found in [WebApp Folder](./WebApp).
+<div align="center">
+	<img src = "https://github.com/sa-y-an/OMRNet/assets/55195504/d02fbcc6-1ba2-4337-bedc-246afe672107" height="50%" width="50%" />
+	<p>
+		<i>
+			An snapshot of the web app we have developed. The site allows users to upload an answer box standard image formats (like .jpg or .png) and immediately predicts the class of the answer box a certain confidence web app. It uses our proposed model at the back end. 
+		</i>
+	</p>
+</div>
+
+
 ### Citation 
 
 If you use our work please cite our paper by 
