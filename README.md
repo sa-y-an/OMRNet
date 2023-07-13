@@ -44,3 +44,23 @@ Since OMRNet will find its major applications in resource constraint regions we 
     </i>
   </p>
 </div>
+
+### Citation 
+
+If you use our work please cite our paper by 
+```ruby
+@article{mondal_omrnet:_2023,
+	title = {{OMRNet}: {A} lightweight deep learning model for optical mark recognition},
+	issn = {1380-7501, 1573-7721},
+	shorttitle = {Omrnet},
+	url = {https://link.springer.com/10.1007/s11042-023-15408-8},
+	doi = {10.1007/s11042-023-15408-8},
+	language = {en},
+	urldate = {2023-07-13},
+	journal = {Multimedia Tools and Applications},
+	author = {Mondal, Sayan and De, Pratyay and Malakar, Samir and Sarkar, Ram},
+	month = jul,
+	year = {2023},
+}
+```
+ 
