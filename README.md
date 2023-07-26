@@ -1,4 +1,4 @@
-# OMRNet
+# OMRNet: A lightweight deep learning model for optical mark recognition
 
 ### Introduction
 
